@@ -1,0 +1,128 @@
+li{
+	list-style: none;
+}
+button,ul,li{
+	padding:0;
+	margin: 0;
+}
+.container{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	padding:30px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: #ccc;
+}
+#game{
+	width:400px;
+	height: 320px;
+	margin: 0 auto;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 2px 1px #999;
+	border-radius: 5px;
+	overflow: hidden;
+}
+#game div{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #555;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.control{
+	margin: 0 auto;
+	text-align: center;
+}
+.lvControl{
+	display: inline-block;	
+	margin: 10px auto;
+}
+.lvControl_item{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+}
+.lvControl_item button{
+	padding: 5px 10px;
+}
+.player{
+	display: flex;
+	 display: -webkit-flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.player_direction{
+	width: 34px;
+	height: 36px;
+	margin:6px;
+	overflow: hidden;
+}
+.player_direction button{
+	outline: none;
+}
+.topArr{
+	position: relative;
+	top:-11px;
+	border-bottom: 30px solid #444;
+	border-left: 15px solid transparent ;
+	border-right: 15px  solid transparent;
+}
+.leftArr{
+	position: relative;
+	top:3px;
+	left:-1px;
+	border-right: 30px solid #444;
+	border-top: 15px solid transparent ;
+	border-bottom: 15px solid transparent;
+}
+.rightArr{
+	position: relative;
+	top:3px;
+	right: 2px;
+	border-left: 30px solid #444 ;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.bottomArr{
+	position: relative;
+	top:4px;
+	border-top: 30px solid #444;
+	border-right: 15px solid transparent ;
+	border-left: 15px solid transparent;
+}
+.player .top{
+	margin: 6px 271px;
+}
+.player_direction:active{
+	box-shadow: 1px 1px 2px 0 #999 inset,-1px -1px 2px 0 #999 inset;
+}
+.empty{
+	background-position: -120px 0;
+}
+.wall{
+	background-position: -80px 0 ;
+}
+.box{
+	background-position: 0 0 ;
+}
+.target{
+	background-position: -40px 0;
+}
+.person{
+	background-position: -160px 0;
+}
+.person2{
+	background-position: -240px 0;
+}
+.match{
+	background-position: -200px 0;
+}
